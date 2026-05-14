@@ -10,3 +10,5 @@ wheels/
 .venv
 *.webm
 *.mp4
+*.webm
+*.mp4
