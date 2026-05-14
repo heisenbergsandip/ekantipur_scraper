@@ -1,0 +1,9 @@
+[project]
+name = "ekantipur-scraper"
+version = "0.1.0"
+description = "Playwright-based web scraper for extracting entertainment news and cartoons from ekantipur.com"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.59.0",
+]

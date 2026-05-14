@@ -1,0 +1,23 @@
+Prompt 1
+write a Python function scrape_entertainment_news(page) using 
+Playwright sync API. It should:
+- Query all div.category-inner-wrapper elements
+- For each, extract: h2 a text as title, author-name a text as author,
+  img data-src as image_url (fallback to src if data-src is empty)
+- Return top 5 as list of dicts
+- Wrap each card in try/except
+
+
+Prompt 2 
+my cartoon is inside div.swiper.cartoon-slider on the homepage.
+The first slide img has data-src for the image and alt for the title.
+Write scrape_cartoon_of_day(page) that navigates to ekantipur.com,
+waits for .cartoon-slider, and extracts the first slide's image and title.
+
+
+Prompt 3
+write a main() function that uses sync_playwright to launch chromium 
+headless=False, calls both scrape functions, combines results into a dict,
+and writes to output.json with ensure_ascii=False, indent=2
+
+
